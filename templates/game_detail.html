@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ game.name }}{% endblock %}
+{% block content %}
+        	<h1>{{ game.name }}</h1>
+			<div id="gameswf">				
+				<object type="application/x-shockwave-flash" data="{{ site.media_pfx }}{{ game.get_swf_name()}}?affiliate_id=49b7c67c4262ed22" width="{{ game.width }}" height="{{ game.height }}">
+				</object>
+			</div>
+			<h2>Description</h2>
+			<p>
+				{{ game.description }}
+			</p>	
+{% endblock %}

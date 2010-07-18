@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>{% block title %}{% endblock %} by {{ site.name }}</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <link href="{{ site.media_pfx }}css/reset.css" rel="stylesheet" type="text/css" media="screen, all" />
+        <link href="{{ site.media_pfx }}css/style.css" rel="stylesheet" type="text/css" media="screen, all" />
+    </head>
+    <body>
+    	<div id="header" class="centered">
+    		<h1>{{ site.name }}</h1>
+    	</div>
+		<div id="menu" class="centered">
+			<ul> 
+				<li><a href="/" title=""><span>Home</span></a></li>
+				<li><a href="{{site.contact_url}}" title=""><span>Contact</span></a></li>
+				<li><a href="/list-of-all-games/" title=""><span>More Games</span></a></li>
+			</ul> 
+			
+		</div>
+        <div id="content" class="centered">
+        	{% if showabout %}
+	        	<p id="about">
+					{{ site.slogan }}
+				</p>
+			{% endif %}
+
+			{% block content %}{% endblock %}</div>
+    </body>
+</html>

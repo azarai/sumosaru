@@ -1,0 +1,121 @@
+body {
+    position: relative;
+}
+
+.centered {
+    width: 840px;
+    margin: 0 auto;
+    border-left: 3px solid #000;
+    border-right: 3px solid #000;
+}
+
+#menu {
+    height: 31px;
+    background-color: #00AEEF
+}
+
+#header {
+    position: relative;
+    height: 125px;
+    font-size: 1.3em;
+    font-family: "Arial Black";
+    background: #333;
+    color: #eee;
+}
+
+#header h1 {
+    position: absolute;
+    left: 20px;
+    top: 20px
+}
+
+#content {
+    position: relative;
+    background: #F9F1FA         ;
+    padding-top: 30px;
+    border-bottom: 3px solid #000;
+}
+
+#content h1 {
+    font-size: 1.3em;
+    padding-left: 20px;
+    margin-bottom: 20px;
+    
+}
+
+#content h2 {
+    font-size: 1.2em;
+    padding-left: 20px;
+}
+
+#content ul {
+    margin: 40px;
+}
+
+#content ul li {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 20px;
+    font-size: 0.8em;
+}
+
+.spacer {
+    clear: both;
+}
+
+#gameswf {
+    margin: 20px;
+    text-align: center;
+}
+
+#content p {
+    margin: 20px;
+}
+
+#about {
+    padding: 10px;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 6px 10px 0 20px;
+    list-style: none;
+}
+
+#menu li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#menu a {
+    float: left;
+    margin: 0;
+    padding: 0 0 0 4px;
+    text-decoration: none;
+}
+
+#menu a span {
+    float: left;
+    display: block;
+    padding: 5px 15px 4px 6px;
+    color: #FFF;
+}
+
+/* Commented Backslash Hack hides rule from IE5-Mac \*/
+#menu a span {
+    float: none;
+}
+
+/* End IE5-Mac hack */
+#menu a:hover span {
+    color: #FFF;
+}
+
+#menu a:hover {
+    background-position: 0% -42px;
+}
+
+#menu a:hover span {
+    background-position: 100% -42px;
+}

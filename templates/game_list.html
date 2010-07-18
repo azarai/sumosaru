@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Play handpicked flash games {% endblock %}
+{% block content %}
+        	<h1>{{ site.name }} presents </h1>
+
+			{% for category in categories %}
+				<h2>{{ category}}</h2>
+				<ul>
+					{% for game in categories[category] %}
+					<li><a href="/{{ game.slug}}" ><img src="{{ site.media_pfx }}{{ game.get_thumb_url()}}" alt="{{ game.name}}" /></a></li>
+					{% endfor %}					
+				</ul>			
+				<div class="spacer"></div>
+			{% endfor %}
+			
+{% endblock %}

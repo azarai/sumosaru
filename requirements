@@ -1,0 +1,3 @@
+Jinja2==2.5
+python-mochi==0.0.1
+-e git://github.com/azarai/newf.git#egg=newf
